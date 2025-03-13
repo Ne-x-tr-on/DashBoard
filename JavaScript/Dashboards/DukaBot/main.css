@@ -1,0 +1,55 @@
+@import url("/assets/style.css");
+
+:root {
+  /* New Color Palette */
+  --primary-color: #4361ee;    /* Vibrant blue */
+  --secondary-color: #f8f9fa;  /* Light gray */
+  --accent-color: #4cc9f0;     /* Cyan */
+  --text-color: #2b2d42;       /* Dark blue-gray */
+  --success-color: #06d6a0;    /* Teal */
+  --warning-color: #ffd166;    /* Yellow */
+  --danger-color: #ef476f;     /* Coral */
+  --background-gradient: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  
+  /* Border */
+  --border-radius: 8px;
+  --border-color: #dee2e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--text-color);
+  background: var(--background-gradient);
+  line-height: 1.6;
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
