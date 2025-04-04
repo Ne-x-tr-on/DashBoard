@@ -1,0 +1,38 @@
+:root{
+  --bg-primary:rgba(113,99,186,255);
+  --bg-secondary:#ebe9e9;
+  --font-family:'poppins',sans-serif;
+  --bg-hover:#e0e0e058;
+  --text-color:#fff;
+  --text-size:1rem;
+  --light-red:rgb(251,233,233);
+  --light-purple:rgb(254,226,254);
+  --light-green:rgb(235,254,235);
+  --light-blue:rgb(235,236,235);
+  --dark-red:red;
+  --dark-purple:red;
+  --dark-purple:purple;
+  --dark-green:green;
+  --dark-blue:blue;
+}
+
+*{
+  margin:0;
+  padding:0;
+  border:none;
+  outline:none;
+  box-sizing:border-box;
+  font-family:'poppins',sans-serif;
+}
+
+body{
+  display:flex;
+}
+
+a{
+  text-decoration: none;
+}
+
+.flex{
+  display: flex;
+}

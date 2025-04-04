@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Check</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffe6f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #ff66b3;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.3s;
+        }
+
+        #yesBtn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #noBtn {
+            background-color: #ff4444;
+            color: white;
+            position: relative;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Do you love me? 💖</h1>
+        <div class="buttons">
+            <button id="yesBtn" onclick="yesResponse()">Yes</button>
+            <button id="noBtn" onmouseover="moveButton()" onclick="noResponse()">No</button>
+        </div>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function moveButton() {
+            const noBtn = document.getElementById('noBtn');
+            const x = Math.random() * 200 - 100;
+            const y = Math.random() * 200 - 100;
+            noBtn.style.transform = `translate(${x}px, ${y}px)`;
+        }
+
+        function yesResponse() {
+            document.getElementById('message').innerHTML = "Yay! I love you too! 💕";
+            document.getElementById('message').style.color = "#4CAF50";
+        }
+
+        function noResponse() {
+            document.getElementById('message').innerHTML = "Go away! 😭";
+            document.getElementById('message').style.color = "#ff4444";
+        }
+    </script>
+</body>
+</html>
