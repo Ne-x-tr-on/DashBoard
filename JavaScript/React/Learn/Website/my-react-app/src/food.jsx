@@ -15,4 +15,5 @@ function Food(){
 
 }
 
+// food.defaultProps
 export default Food
