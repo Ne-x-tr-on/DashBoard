@@ -15,7 +15,6 @@ import UserGreeting from './userGreeting.jsx';
 function App() {
   return (
     <>
-       
       <Card />
       <Student/>
       <Header />
